@@ -10,6 +10,7 @@
 
     <!-- Fonts -->
     <link href="~/Content/fonts.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="~/Content/raleway-font.css">
 
     <!-- Style Sheet -->
     <link rel="stylesheet" href="~/Content/owl.carousel.css">
@@ -18,9 +19,8 @@
     <script src="~/Scripts/jquery.min.1.11.1.js"></script>
 
     <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="~/Content/navbar.css">
-    <link rel="stylesheet" type="text/css" href="~/Content/css">
     <link rel="stylesheet" type="text/css" href="~/Content/style.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/navbar.css">
     <link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,63 +31,63 @@
 </head>
 
 <body>
-<div class="toolbar navbar navbar-inverse navbar-fixed-top opaque-navbar opaque">
-    <div class="uou-block-1a blog">
-      <div class="container" style="padding-top: 5px">
-        <div class="logo" style="float:left" >
-          <div class="navbar-header">
-            <a class="navbar-brand navbar-a-color" href="#" style="font-size: 38px;padding-left:0px;color:#ffffff;">Hunt Smart</a>
-          </div>
-        </div>
-        <form class="navbar-form navbar-left" id="search-field" role="search" action="/Home/companylist" style="height:33px;width:561px;padding-left:30px;">
-          <div class="input-group stylish-input-group" style="height:33px;outline:aliceblue;">
-            <input type="text" class="form-control"  style="height:33px;width:450px;color:#545454;" placeholder="Search" >
-            <span class="input-group-addon">
-              <button title="Advanced Search">
-                <span class="glyphicon glyphicon-cog"></span>
-              </button>
-              <button type="submit" title="Search">
-                <span class="glyphicon glyphicon-search"></span>
-              </button>
-            </span>
-          </div>
-        </form>
+    <div class="toolbar navbar navbar-inverse navbar-fixed-top opaque-navbar opaque">
+        <div class="uou-block-1a blog">
+            <div class="container" style="padding-top: 5px">
+                <div class="logo" style="float:left">
+                    <div class="navbar-header">
+                        <a class="navbar-brand navbar-a-color" href="/Home/Index_l" style="font-size: 38px;padding-left:0px;color:#ffffff;">Hunt Smart</a>
+                    </div>
+                </div>
+                <form class="navbar-form navbar-left" id="search-field" role="search" action="/Home/companylist" style="height:33px;width:561px;padding-left:30px;">
+                    <div class="input-group stylish-input-group" style="height:33px;outline:aliceblue;">
+                        <input type="text" class="form-control" style="height:33px;width:450px;color:#545454;" placeholder="Search">
+                        <span class="input-group-addon">
+                            <button title="Advanced Search">
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </button>
+                            <button type="submit" title="Search">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
 
 
                 <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown">
-                <img src="~/images/avatar-2.jpg" class="img-circle special-img">
-                <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-                        <li>
-                            <div class="navbar-login">
-                                
-                                        <p class="text-center">
-                                            <img src="~/images/avatar-2.jpg" style="height:90px">
-                                        </p>
-                                    
-                                        <p class="text-center"><strong>Saif Ullah</strong></p>
-                                        <p class="text-center small">crazytodevelop@gmail.com</p>
-                                        <p class="text-left">
-                                            <a href="/Home/userProfile" class="btn btn-primary btn-block btn-sm" style="background-color:#2dabff">Profile</a>
-                                        </p>
-                                    
-                            </div>
-                        </li>
-                        <li class="divider navbar-login-session-bg"></li>
-                        <li><a href="/Home/userDashboard">Account Settings <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
-                        <li class="divider"></li>
-                        <li><a href="/Home/profile_company">Log Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
-                    </ul>
-                </li>
-            </ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle profile-image" data-toggle="dropdown">
+                            <img src="~/images/avatar-2.jpg" class="img-circle special-img">
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="navbar-login">
+
+                                    <p class="text-center">
+                                        <img src="~/images/avatar-2.jpg" style="height:90px">
+                                    </p>
+
+                                    <p class="text-center"><strong>Saif Ullah</strong></p>
+                                    <p class="text-center small">crazytodevelop@gmail.com</p>
+                                    <p class="text-left">
+                                        <a href="/Home/userProfile" class="btn btn-primary btn-block btn-sm" style="background-color:#2dabff">Profile</a>
+                                    </p>
+
+                                </div>
+                            </li>
+                            <li class="divider navbar-login-session-bg"></li>
+                            <li><a href="/Home/userDashboard">Account Settings <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+                            <li class="divider"></li>
+                            <li><a href="/Home/profile_company">Log Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+                        </ul>
+                    </li>
+                </ul>
 
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
     <div id="main-wrapper">
 
         <div class="compny-profile">
@@ -257,16 +257,16 @@
                             <!-- Company contact
                             removing it for the moment -->
                             <!--<div class="sidebar">
-                            <h5 class="main-title">Contact</h5>
-                            <div class="sidebar-information form-side">
-                                <form action="#">
-                                    <input type="text" placeholder="Name & Surname">
-                                    <input type="text" placeholder="E-mail address">
-                                    <textarea placeholder="Your Message"></textarea>
-                                    <button class="btn btn-primary">Send message</button>
-                                </form>
-                            </div>
-                        </div>-->
+                                <h5 class="main-title">Contact</h5>
+                                <div class="sidebar-information form-side">
+                                    <form action="#">
+                                        <input type="text" placeholder="Name & Surname">
+                                        <input type="text" placeholder="E-mail address">
+                                        <textarea placeholder="Your Message"></textarea>
+                                        <button class="btn btn-primary">Send message</button>
+                                    </form>
+                                </div>
+                            </div>-->
 
                         </div>
 
@@ -386,14 +386,14 @@
                                                 </ul>
                                             </div>
                                             <!--Reply-->
-                                            
+
                                             <div class="sidebar-information form-side">
                                                 <form>
                                                     <textarea readonly>
                                                         I found this company whatever
                                                     </textarea>
                                                     <textarea id="tr1" placeholder="Write Your Reply" hidden="true"></textarea>
-                                                    <a>Report Review</a><br/>
+                                                    <a>Report Review</a><br />
                                                     <button id="r1" class="btn btn-primary reply">Reply</button>
                                                 </form>
                                             </div>
@@ -532,7 +532,7 @@
                                                     <button id="r4" class="btn btn-primary reply">Reply</button>
                                                 </form>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -554,7 +554,7 @@
                                                 <canvas id="doughnut" style="width:416px; height: 306px;"></canvas>
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -567,12 +567,12 @@
 
     <!-- FOOTER -->
     <div class="uou-block-4a secondary dark" style="background-color:rgba(127,127,127,0.1);margin-top: 100px">
-      <div class="container">
-        <ul class="links">
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-        <p>Copyright &copy; 2016 <a href="#">TeamCodeJitters</a>. All Rights reserved.</p>
-      </div>
+        <div class="container">
+            <ul class="links">
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <p>Copyright &copy; 2016 <a href="#">TeamCodeJitters</a>. All Rights reserved.</p>
+        </div>
     </div>
 
     <!-- Scripts -->
@@ -595,14 +595,14 @@
 
     <script>
         $(document).ready(function () {
-		
-			//for search button redirection
 
-      $('#search-button').click(function () {
-        
-          location.href = "/Home/companylist";
-        
-      });
+            //for search button redirection
+
+            $('#search-button').click(function () {
+
+                location.href = "/Home/companylist";
+
+            });
             //some variables;
             //for adding replies
             var id1 = 0;
@@ -637,7 +637,7 @@
                             reportComment.insertAfter(replyField);
                             $('#r1').text("Reply");
                             replyField.attr('readonly', 'readonly');
-                        }        
+                        }
                     }
                 }
                 else if (id == 'r2') {
@@ -708,7 +708,7 @@
                     }
                 }
 
-                
+
             });
 
             $('.reportComment').click(function (e) {

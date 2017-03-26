@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HuntSmart</RootNamespace>
     <AssemblyName>HuntSmart</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -84,11 +85,7 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -224,6 +221,7 @@
     <Content Include="Content\navbar.css" />
     <Content Include="Content\normalize.css" />
     <Content Include="Content\owl.carousel.css" />
+    <Content Include="Content\raleway-font.css" />
     <Content Include="Content\star-off.svg" />
     <Content Include="Content\star-on.svg" />
     <Content Include="Content\StarRating.css" />
@@ -344,7 +342,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\css" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfontd41d.eot" />
     <Content Include="fonts\fontawesome-webfonte0a5.eot" />
@@ -376,9 +373,9 @@
     <Content Include="fonts\open-sans-v13-vietnamese_latin_greek-ext_cyrillic_cyrillic-ext_greek_latin-ext-regular.eot" />
     <Content Include="fonts\open-sans-v13-vietnamese_latin_greek-ext_cyrillic_cyrillic-ext_greek_latin-ext-regular.woff" />
     <Content Include="fonts\open-sans-v13-vietnamese_latin_greek-ext_cyrillic_cyrillic-ext_greek_latin-ext-regular.woff2" />
-    <Content Include="Scripts\demo-1.js.download" />
-    <Content Include="Scripts\EasePack.min.js.download" />
-    <Content Include="Scripts\ga.js.download" />
+    <Content Include="Scripts\demo-1.js" />
+    <Content Include="Scripts\EasePack.min.js" />
+    <Content Include="Scripts\ga.js" />
     <Content Include="img\Thumbs.db" />
     <Content Include="Images\Thumbs.db" />
     <Content Include="Images\flags\32\Thumbs.db" />
@@ -400,9 +397,11 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\navbar.js" />
     <Content Include="Scripts\owl.carousel.min.js" />
+    <Content Include="Scripts\rAF.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\scripts.js" />
+    <Content Include="Scripts\TweenLite.min.js" />
     <Content Include="Scripts\uou-accordions.js" />
     <Content Include="Scripts\uou-tabs.js" />
     <Content Include="Scripts\userprofile.js" />
@@ -440,8 +439,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Scripts\rAF.js.download" />
-    <Content Include="Scripts\TweenLite.min.js.download" />
     <Content Include="Views\Home\config.json" />
   </ItemGroup>
   <ItemGroup>
