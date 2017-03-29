@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="41cc087ba0654d46ab2af76052d26f16" Name="Diagram1" ZoomLevel="108">
+        <EntityTypeShape EntityType="HuntSmartModel.Comment" Width="1.5" PointX="8.25" PointY="1.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="HuntSmartModel.Company" Width="1.5" PointX="3.125" PointY="0.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="HuntSmartModel.Education" Width="1.5" PointX="7.5" PointY="4.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="HuntSmartModel.EmailVerificationCode" Width="1.5" PointX="2.625" PointY="4.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="HuntSmartModel.Experience" Width="1.5" PointX="3.625" PointY="2.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="HuntSmartModel.NewCompany" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="HuntSmartModel.PasswordVerificationCode" Width="1.5" PointX="2.125" PointY="3.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="HuntSmartModel.PopularCompany" Width="1.5" PointX="0.5" PointY="1.875" IsExpanded="false" />
+        <EntityTypeShape EntityType="HuntSmartModel.RatingQuestion" Width="1.5" PointX="10.625" PointY="2.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="HuntSmartModel.RatingResponse" Width="1.5" PointX="10" PointY="0.75" IsExpanded="false" />
+        <EntityTypeShape EntityType="HuntSmartModel.Reply" Width="1.5" PointX="8" PointY="2.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="HuntSmartModel.Review" Width="1.5" PointX="5.5" PointY="0.5" IsExpanded="false" />
+        <EntityTypeShape EntityType="HuntSmartModel.Skill" Width="1.5" PointX="10.5" PointY="4.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="HuntSmartModel.TopCompany" Width="1.5" PointX="0.5" PointY="1.125" IsExpanded="false" />
+        <EntityTypeShape EntityType="HuntSmartModel.User" Width="1.5" PointX="5.75" PointY="3" IsExpanded="false" />
+        <EntityTypeShape EntityType="HuntSmartModel.UserSkill" Width="1.5" PointX="8.875" PointY="3.125" IsExpanded="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_Comment_Reply" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_Review_Comment" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_User_Comment" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_Company_PopularCompany" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="HuntSmartModel.FK_Company_Review" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_Company_TopCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_Experience_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_NewCompany_NewCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_User_Education" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_User_EmailVerificationCode" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_Experience_User" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_User_PasswordVerificationCode" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_RatingQuestion_RatingResponse" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_Review_RatingResponse" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_User_Reply" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_User_Review" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_UserSkill_Skill" ManuallyRouted="false" />
+        <AssociationConnector Association="HuntSmartModel.FK_UserSkill_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
