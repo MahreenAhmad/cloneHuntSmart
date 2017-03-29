@@ -1911,18 +1911,14 @@ iframe {
 	font-size: 25px;
 	text-align: center;
 }
-.contact-map {
-	width: 100%;
-	height: 380px;
-}
-.contact-map .gm-style-iw {
+.gm-style-iw {
 	padding: 10px 10px 5px 10px;
 }
-.contact-map .gm-style-iw h3 {
+.gm-style-iw h3 {
 	margin: 0 0 15px 0;
 	font-size: 18px;
 }
-.contact-map .gm-style-iw ul {
+.gm-style-iw ul {
 	position: relative;
 	padding: 0;
 	margin: 0;
@@ -1931,20 +1927,20 @@ iframe {
 	list-style: none;
 	vertical-align: top;
 }
-.contact-map .gm-style-iw ul:first-child li span {
+.gm-style-iw ul:first-child li span {
 	padding-left: 20px;
 }
-.contact-map .gm-style-iw ul li {
+.gm-style-iw ul li {
 	position: relative;
 	display: block;
 }
-.contact-map .gm-style-iw ul li .fa {
+.gm-style-iw ul li .fa {
 	position: absolute;
 	margin-top: 6px;
 	margin-right: 5px;
 	width: 15px;
 }
-.contact-map .gm-style-iw ul li span {
+.gm-style-iw ul li span {
 	padding-left: 20px;
 	display: block;
 }
@@ -2698,7 +2694,7 @@ iframe {
 	padding: 4px;
 	border: 1px solid #eaeaea;
 }
-.single-company-content .sidebar .sidebar-map #single-company-map {
+.single-company-content .sidebar .sidebar-map  {
 	width: 100%;
 	height: 210px;
 }

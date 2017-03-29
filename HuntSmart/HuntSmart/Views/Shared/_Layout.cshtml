@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>@ViewBag.Title</title>
+  <link rel="shortcut icon" href="~/img/favicon-64x64.png">
+
+  <!-- Fonts -->
+  <link href="~/Content/fonts.css" rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="~/Content/raleway-font.css">
+
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="~/Content/owl.carousel.css">
+  <link rel="stylesheet" href="~/Content/main-style.css">
+
+  <script src="~/Scripts/jquery.min.1.11.1.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="~/Content/navbar.css">
+  <link rel="stylesheet" type="text/css" href="~/Content/style.css">
+  <link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css">
+  @RenderSection("additionalStyles", required: false)
+</head>
+<body>
+  <div class="toolbar navbar navbar-inverse navbar-fixed-top opaque-navbar opaque">
+    <div class="uou-block-1a blog">
+      <div class="container" style="padding-top: 5px">
+        <!--LOGO-->
+        <div class="logo" style="float:left">
+          <div class="navbar-header">
+            <a class="navbar-brand navbar-a-color" id="main-logo" href="/Home/Index" style="font-size: 38px;padding-left:0px;color:#ffffff;">Hunt Smart</a>
+          </div>
+        </div>
+        <!--SEARCH-->
+        <form class="navbar-form navbar-left" id="search-field" role="search" action="/Home/companylist" method="post" style="height:33px;width:561px;padding-left:30px;">
+          <div class="input-group stylish-input-group" style="height:33px;outline:aliceblue;">
+            <input type="text" class="form-control" name="query" style="height:33px;width:450px;color:#545454;" placeholder="Search">
+            <span class="input-group-addon">
+              <button type="submit" title="Advanced Search">
+                <span class="glyphicon glyphicon-cog"></span>
+              </button>
+              <button type="submit" title="Search" id="search-button">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+          </div>
+        </form>
+        <!--SIGN-IN-->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle navbar-a-color" data-toggle="dropdown" style="font-size: 30px; font-family: raleway;color:#ffffff;background-color: rgba(0,0,0,0);">Sign in<span class="caret"></span></a>
+            <ul id="login-dp" class="dropdown-menu">
+              <li>
+                <div class="row" style="margin: 0px">
+                  <div class="col-md-12">
+                    <!--LOG IN FORM-->
+                    <form class="form" id="login-nav">
+                      <p id="errorMessage"></p>
+                      <div class="form-group" style="padding-top:8px">
+                        <label class="sr-only" for="exampleInputEmail2">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email" required>
+                      </div>
+                      <div class="form-group" style="padding-top:8px">
+                        <label class="sr-only" for="exampleInputPassword2">Password</label>
+                        <input type="password" style="color: black;" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                        <div class="row">
+                          <div class="checkbox col-md-6">
+                            <label><input type="checkbox"><span style="padding-left: 10px;font-weight: 400">Remember me</span></label>
+                          </div>
+                          <div id="myBtn" class="col-md-6 text-right" style="font-size:12px;margin-top:10px;margin-bottom:10px"><a href="#">Forgot password ?</a></div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <button type="button" id="loginButton" class="btn btn-primary btn-block">Sign in</button>
+                      </div>
+                    </form>
+                    <div style="text-align:center">OR</div>
+                    <div class="social-buttons" style="padding-bottom:10px">
+                      <a href="#" class="btn btn-fb"><i class="fa fa-facebook" style="padding-right: 5px;"></i> Sign in with Facebook</a>
+                    </div>
+                  </div>
+                  <div class="bottom text-center">
+                    New on Hunt Smart ? <a href="/Home/register"><b>Create Account</b></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="dialog" title="Email Recovery Dialog" class="dialog_class">
+        <form action="" method="post">
+          <label id="dialogLabel">Enter your Email For Recovering your Account:</label>
+          <input id="email" name="email" type="text" style="color:black">
+          <input id="submit" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--END OF MODAL-->
+
+  @RenderBody()
+  <!-- FOOTER -->
+  <div class="uou-block-4a secondary dark" style="background-color:rgba(127,127,127,0.1);margin-top: 100px">
+    <div class="container">
+      <ul class="links">
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <p>Copyright &copy; 2016 <a href="#">TeamCodeJitters</a>. All Rights reserved.</p>
+    </div>
+  </div>
+
+  @RenderSection("additionalScripts", required: false)
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      //for search button redirection
+      $('#search-button').click(function () {
+        location.href = "/Home/companylist";
+      });
+    });
+  </script>
+
+  <script src="~/Scripts/navbar.js"></script>
+  <script src="~/Scripts/bootstrap.min.3.3.2.js"></script>
+
+</body>
+</html>
