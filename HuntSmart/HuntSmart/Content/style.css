@@ -1,28 +1,12 @@
-/*------------------------------------------------------------------
-    Main Style Stylesheet
-    Project:        TIGER HTML5 Template
-    Version:        1.0
-    Author:         UOUAPPS
-    Last change:    06/10/2016
-    Primary use:    Creative, Coporate, Business,
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-body 
- + WRAP
- + HEADER
- + NAVIGATION
- + BANNER
- + SERVICES
- + OUR FEATURED FOUNDERS
- + BLOG UPDATES 
- + APPOINMENT
- + NEWS FROM BLOG
- + PARTNERS / CLIENTS
- + FOOTER
- + SOCIAL ICONS
- + MEGA MENU
- + 3 MENU LEVEL 
--------------------------------------------------------------------*/
+body {
+	background: #fff;
+	color: #383a3c;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.25;
+	font-family: 'Raleway', Calibri, Arial, sans-serif;
+}
+
 #profile-template-5 .profile-sidebar {
 	float: left;
 	width: 100%;
@@ -1927,18 +1911,14 @@ iframe {
 	font-size: 25px;
 	text-align: center;
 }
-.contact-map {
-	width: 100%;
-	height: 380px;
-}
-.contact-map .gm-style-iw {
+.gm-style-iw {
 	padding: 10px 10px 5px 10px;
 }
-.contact-map .gm-style-iw h3 {
+.gm-style-iw h3 {
 	margin: 0 0 15px 0;
 	font-size: 18px;
 }
-.contact-map .gm-style-iw ul {
+.gm-style-iw ul {
 	position: relative;
 	padding: 0;
 	margin: 0;
@@ -1947,20 +1927,20 @@ iframe {
 	list-style: none;
 	vertical-align: top;
 }
-.contact-map .gm-style-iw ul:first-child li span {
+.gm-style-iw ul:first-child li span {
 	padding-left: 20px;
 }
-.contact-map .gm-style-iw ul li {
+.gm-style-iw ul li {
 	position: relative;
 	display: block;
 }
-.contact-map .gm-style-iw ul li .fa {
+.gm-style-iw ul li .fa {
 	position: absolute;
 	margin-top: 6px;
 	margin-right: 5px;
 	width: 15px;
 }
-.contact-map .gm-style-iw ul li span {
+.gm-style-iw ul li span {
 	padding-left: 20px;
 	display: block;
 }
@@ -2571,7 +2551,7 @@ iframe {
 	font-size: 15px;
 }
 .single-company-content .listing .listing-ver-3 .listing-inner .listing-content .details li span {
-	magin-top: 5px;
+	margin-top: 5px;
 	display: block;
 	color: #999999;
 	font-size: 14px;
@@ -2714,7 +2694,7 @@ iframe {
 	padding: 4px;
 	border: 1px solid #eaeaea;
 }
-.single-company-content .sidebar .sidebar-map #single-company-map {
+.single-company-content .sidebar .sidebar-map  {
 	width: 100%;
 	height: 210px;
 }
